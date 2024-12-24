@@ -4,7 +4,6 @@ export default function App() {
   const[socket,setSocket] = useState<null|WebSocket>(null)
   const[message,setMessage] = useState('')
   const[socketMsg,setSocketMsg] = useState<string[]>([])
-  console.log(socketMsg)
 
   useEffect(() => {
     const socket = new WebSocket("ws://localhost:8080");
