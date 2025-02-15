@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
+
+
+//sending and receiving messages : 
+//sending : always send a string.
+//receiving : always a string is received.
 export default function User(){
     const[socket,setSocket] = useState<null|WebSocket>(null)
     const [message,setMessage] = useState("");
